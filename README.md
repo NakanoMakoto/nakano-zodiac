@@ -6,6 +6,7 @@
 
 ## フォルダ構成
 
+```
 root/
 　├ node_modules/
 　├ public/
@@ -17,3 +18,4 @@ root/
 　│　　　└ js/ # ここにjavascriptファイルを配置
 　├ package.json　 
 　└ webpack.config.js
+```
