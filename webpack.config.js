@@ -1,11 +1,14 @@
+// npx webpackだけだとpathが通らないと言われるので、グローバルに宣言
 var path = require('path');
 
 module.exports = {
     mode: "development",
+    // ここで読み込むファイル名を指定する
     entry: "./src/js/zodiac.js",
+    // 出力先を指定する
     output: {
-    filename: 'bundle.js',
-    path: path.join(__dirname, 'public/js')
+      filename: 'bundle.js',
+      path: path.join(__dirname, 'public/js')
     },
     module: {
       rules: [
